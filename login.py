@@ -5,7 +5,6 @@ import time, os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from PIL import Image,ImageEnhance
-from bs4 import BeautifulSoup
 from baidu_ai_ocr import BaiduAIOCR
 
 def do_login():
@@ -42,17 +41,11 @@ def do_login():
     elem_verify_code.send_keys(code)
     elem_pwd.send_keys(Keys.RETURN)
 
-    # 解析html
+    # 返回html
     html_doc = driver.page_source
-    # print html_doc
-    soup = BeautifulSoup(html_doc, 'lxml')
-    links = soup.find_all('a')
-    links = soup.find_all('span', { 'class' : 'count_item'})
-    for link in links:
-        #check_alert(link)
-        print link
-    time.sleep(5)
     driver.quit()
+    return html_doc
 
 if __name__ == '__main__':
-    do_login()
+    doc = do_login()
+    print doc
