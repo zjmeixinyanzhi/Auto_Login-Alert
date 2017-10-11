@@ -1,6 +1,11 @@
-# ��Python��ҳ���漰�����Զ��澯 
-## 1 ˵��
-����ĳ����ʺϼ��ĳ����վ�Ϲ�����Ϣ���ȸ���Ȥ����Ϣ���������������ܹ��Զ���ص���Ȼ����Է��ʼ�������Զ����ѣ���������漰ϵͳ��¼����֤��ʶ����ҳ�����Ͷ�ʱ����
-���泡���Ƚϼ򵥣�Demo�ļ�����Ϊ���õ��Ĺ��ߵ�ʾ������������߿��Ը����Լ����������չ��
-## 2 ����
-��ϸ��ο���http://zjzone.cc/index.php/2017/09/24/python-shi-xian-di-jian-dan-wang-ye-pa-chong-ji-zi-dong-gao-jing
+# 简单Python网页爬虫及内容自动告警 
+## 1 说明
+爬虫的场景适合监控某个网站上公告信息，等感兴趣的信息发布出来后，爬虫能够自动监控到，然后可以发邮件或短信自动提醒，此过程涉及：
+* 系统登录
+* 验证码识别
+* 网页解析
+* 定时任务
+
+示例爬虫场景比较简单，Demo文件夹下为所用到的工具的示例，后来者可以根据自己需求进行扩展。
+## 2 其他
+详细请参考：[《Python实现简单网页爬虫及自动告警》](http://zjzone.cc/index.php/2017/09/24/python-shi-xian-di-jian-dan-wang-ye-pa-chong-ji-zi-dong-gao-jing)。
